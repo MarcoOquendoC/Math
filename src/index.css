@@ -1,3 +1,10 @@
+:root {
+  --g1: rgb(133, 134, 148);
+  --g2: rgb(224, 224, 224);
+  --g3: rgb(186, 186, 186);
+  --oran: rgb(245, 145, 62);
+}
+
 body {
   margin: 0;
   font-family:
@@ -24,4 +31,123 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+section h2 {
+  margin: 0;
+}
+
+.calculator {
+  width: 300px;
+  margin: auto;
+  height: 250px;
+  display: grid;
+  grid-template-areas:
+    "in in in in"
+    "ac pm pc di"
+    "n7 n8 n9 mu"
+    "n4 n5 n6 mi"
+    "n1 n2 n3 pl"
+    "n0 n0 do eq";
+}
+
+.in {
+  font-size: 1rem;
+  grid-area: in;
+  color: white;
+  text-align: end;
+  background-color: var(--g1);
+  border: 1px solid var(--g3);
+}
+
+.pm {
+  grid-area: pm;
+}
+
+.ac {
+  grid-area: ac;
+}
+
+.pc {
+  grid-area: pc;
+}
+
+.di {
+  grid-area: di;
+}
+
+.mu {
+  grid-area: mu;
+}
+
+.mi {
+  grid-area: mi;
+}
+
+.pl {
+  grid-area: pl;
+}
+
+.eq {
+  grid-area: eq;
+}
+
+.n9 {
+  grid-area: n9;
+}
+
+.n8 {
+  grid-area: n8;
+}
+
+.n7 {
+  grid-area: n7;
+}
+
+.n6 {
+  grid-area: n6;
+}
+
+.n5 {
+  grid-area: n5;
+}
+
+.n4 {
+  grid-area: n4;
+}
+
+.n3 {
+  grid-area: n3;
+}
+
+.n2 {
+  grid-area: n2;
+}
+
+.n1 {
+  grid-area: n1;
+}
+
+.n0 {
+  grid-area: n0;
+}
+
+.do {
+  grid-area: do;
+}
+
+.a {
+  background-color: var(--g2);
+  border: 0.5px solid var(--g3);
+}
+
+.y {
+  border: 0.5px solid var(--g3);
+  background-color: var(--oran);
 }
