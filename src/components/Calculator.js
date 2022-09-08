@@ -1,38 +1,64 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 
-class Calculator extends React.PureComponent {
+class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+      err: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick = (event) => {
+    const result = calculate(this.state, event.target.textContent);
+    this.setState(result);
+  }
+
   render() {
-    // Change code below this line
+    const {
+      total, next, error, operation,
+    } = this.state;
     return (
       <section>
         <h2>Let&apos;s do some math!</h2>
         <div className="calculator">
-          <input className="in" value="0" />
+
+          <div className="in">
+            { total }
+            { operation }
+            { next }
+            { error }
+          </div>
 
           {/* operators */}
-          <button className="di y" type="button">÷</button>
-          <button className="mu y" type="button">&times;</button>
-          <button className="mi y" type="button">-</button>
-          <button className="pl y" type="button">+</button>
-          <button className="eq y" type="button">=</button>
+          <button onClick={this.handleClick} className="di y" type="button">÷</button>
+          <button onClick={this.handleClick} className="mu y" type="button">x</button>
+          <button onClick={this.handleClick} className="mi y" type="button">-</button>
+          <button onClick={this.handleClick} className="pl y" type="button">+</button>
+          <button onClick={this.handleClick} className="eq y" type="button">=</button>
 
           {/* methods */}
-          <button className="ac a" type="button">AC</button>
-          <button className="pm a" type="button">+/-</button>
-          <button className="pc a" type="button">%</button>
+          <button onClick={this.handleClick} className="ac a" type="button">AC</button>
+          <button onClick={this.handleClick} className="pm a" type="button">+/-</button>
+          <button onClick={this.handleClick} className="pc a" type="button">%</button>
 
           {/* numbers */}
-          <button className="n9 a" type="button">9</button>
-          <button className="n8 a" type="button">8</button>
-          <button className="n7 a" type="button">7</button>
-          <button className="n6 a" type="button">6</button>
-          <button className="n5 a" type="button">5</button>
-          <button className="n4 a" type="button">4</button>
-          <button className="n3 a" type="button">3</button>
-          <button className="n2 a" type="button">2</button>
-          <button className="n1 a" type="button">1</button>
-          <button className="n0 a" type="button">0</button>
-          <button className="do a" type="button">.</button>
+          <button onClick={this.handleClick} className="n9 a" type="button">9</button>
+          <button onClick={this.handleClick} className="n8 a" type="button">8</button>
+          <button onClick={this.handleClick} className="n7 a" type="button">7</button>
+          <button onClick={this.handleClick} className="n6 a" type="button">6</button>
+          <button onClick={this.handleClick} className="n5 a" type="button">5</button>
+          <button onClick={this.handleClick} className="n4 a" type="button">4</button>
+          <button onClick={this.handleClick} className="n3 a" type="button">3</button>
+          <button onClick={this.handleClick} className="n2 a" type="button">2</button>
+          <button onClick={this.handleClick} className="n1 a" type="button">1</button>
+          <button onClick={this.handleClick} className="n0 a" type="button">0</button>
+          <button onClick={this.handleClick} className="do a" type="button">.</button>
         </div>
       </section>
     );

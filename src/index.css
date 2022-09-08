@@ -6,7 +6,6 @@
 }
 
 body {
-  margin: 0;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -58,10 +57,14 @@ section h2 {
 }
 
 .in {
-  font-size: 1rem;
+  display: flex;
   grid-area: in;
   color: white;
-  text-align: end;
+  min-height: 20px;
+  line-height: 15px;
+  align-items: center;
+  padding-right: 0.2rem;
+  justify-content: flex-end;
   background-color: var(--g1);
   border: 1px solid var(--g3);
 }
