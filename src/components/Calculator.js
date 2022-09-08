@@ -9,18 +9,19 @@ class Calculator extends React.PureComponent {
         <div className="calculator">
           <input className="in" value="0" />
 
+          {/* operators */}
           <button className="di y" type="button">÷</button>
           <button className="mu y" type="button">&times;</button>
           <button className="mi y" type="button">-</button>
           <button className="pl y" type="button">+</button>
           <button className="eq y" type="button">=</button>
-          {/* operators */}
 
+          {/* methods */}
           <button className="ac a" type="button">AC</button>
           <button className="pm a" type="button">+/-</button>
           <button className="pc a" type="button">%</button>
-          {/* methods */}
 
+          {/* numbers */}
           <button className="n9 a" type="button">9</button>
           <button className="n8 a" type="button">8</button>
           <button className="n7 a" type="button">7</button>
