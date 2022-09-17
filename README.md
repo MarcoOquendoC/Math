@@ -36,7 +36,7 @@ To get a local copy up and running follow these simple steps.
 - **REACT JS:** JavaScript library for building user interface.
 
 ## 🌎 Live Demo:
-- [Link comming soon]()
+- [Deployed by netlify](https://glowing-dasik-ad3f00.netlify.app/Calculator)
 
 ## Authors 
 ### 👤 Marco Oquendo
