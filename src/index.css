@@ -5,6 +5,10 @@
   --oran: rgb(245, 145, 62);
 }
 
+* {
+  max-width: 700px;
+}
+
 body {
   font-family:
     -apple-system,
@@ -20,6 +24,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav span {
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 code {
@@ -54,6 +69,7 @@ section h2 {
     "n4 n5 n6 mi"
     "n1 n2 n3 pl"
     "n0 n0 do eq";
+  margin-top: 80px;
 }
 
 .in {
@@ -63,10 +79,12 @@ section h2 {
   min-height: 20px;
   line-height: 15px;
   align-items: center;
-  padding-right: 0.2rem;
+  padding-right: 1rem;
   justify-content: flex-end;
   background-color: var(--g1);
   border: 1px solid var(--g3);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .pm {
@@ -99,6 +117,7 @@ section h2 {
 
 .eq {
   grid-area: eq;
+  border-bottom-right-radius: 30px;
 }
 
 .n9 {
@@ -139,6 +158,7 @@ section h2 {
 
 .n0 {
   grid-area: n0;
+  border-bottom-left-radius: 30px;
 }
 
 .do {
