@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple steps.
 - [Deployed by netlify](https://634590a1a505dc0090b89b27--musical-kleicha-74803b.netlify.app/)
 
 ## Authors 
-### 👤 Marco Oquendo
+<img src="https://ca.slack-edge.com/T47CT8XPG-U03GYGT3LBA-0bd15eb5c4a7-512" alt="Marco" width="40" height="40" /> **Marco Oquendo**
 - GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC)
 - Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc)
 - LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/vinicio-oquendo-4a289156/)
